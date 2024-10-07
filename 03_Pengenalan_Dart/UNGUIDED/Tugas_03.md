@@ -46,6 +46,7 @@ void main() {
 }
 ```
 Output : <br>
+![Screenshot 2024-10-02 113858](https://github.com/user-attachments/assets/0549ac83-69a4-44b6-9626-7c0d97b9e785)
 
 **Tugas Looping :** <br>
 Input :
@@ -76,7 +77,7 @@ void main() {
 ```
 
 Output : <br>
-
+![Screenshot 2024-10-02 114453](https://github.com/user-attachments/assets/3f868e99-aa85-4b38-8ca9-8783d0ad2eb4)
 
 **Tugas Function :** <br>
 Input :
@@ -114,4 +115,4 @@ void main() {
 ```
 
 Output : <br>
-
+![Screenshot 2024-10-02 114653](https://github.com/user-attachments/assets/4beb0052-72ed-419d-b4b4-1310be6814f4)
