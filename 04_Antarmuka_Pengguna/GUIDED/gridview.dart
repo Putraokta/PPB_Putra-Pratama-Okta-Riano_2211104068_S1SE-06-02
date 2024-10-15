@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class gridView extends StatefulWidget {
+  const gridView({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<gridView> createState() => _MyWidgetState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _MyWidgetState extends State<gridView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Praktikum 4'),
-        backgroundColor: Colors.blueAccent[700],
+        backgroundColor: const Color.fromARGB(255, 0, 255, 98),
       ),
       body: GridView.count(
         crossAxisCount: 2,
@@ -25,36 +25,48 @@ class _MyWidgetState extends State<MyWidget> {
             padding: EdgeInsets.all(10),
             child: Column(
               children: [
-                Icon(Icons.add),
-                Text('gridView 1'),
+                Icon(Icons.account_circle, size: 100),
+                Text('Mas Putraaaa')
               ],
             ),
-            color: Colors.amberAccent,
+            color: const Color.fromARGB(255, 0, 163, 122),
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text('gridView 2'),
-            color: Colors.greenAccent,
+            child: Column(
+              children: [
+                Icon(Icons.account_balance_wallet_sharp, size: 100),
+                Text('BCA')
+              ],
+            ),
+            color: const Color.fromARGB(255, 255, 255, 255),
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text('gridView 3'),
-            color: Colors.redAccent,
+            child: Column(
+              children: [
+                Icon(Icons.account_balance, size: 100),
+                Text('RARRWW')
+              ],
+            ),
+            color: const Color.fromARGB(255, 255, 66, 214),
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text('gridView 4'),
-            color: Colors.blueAccent,
+            child: Column(
+              children: [Icon(Icons.add_alarm_sharp, size: 100), Text('Alarm')],
+            ),
+            color: const Color.fromARGB(255, 94, 0, 81),
           ),
           Container(
             padding: EdgeInsets.all(10),
             child: Text('gridView 5'),
-            color: Colors.yellowAccent,
+            color: const Color.fromARGB(255, 255, 255, 109),
           ),
           Container(
             padding: EdgeInsets.all(10),
             child: Text('gridView 6'),
-            color: Colors.purpleAccent,
+            color: const Color.fromARGB(255, 101, 0, 119),
           ),
         ],
       ),
