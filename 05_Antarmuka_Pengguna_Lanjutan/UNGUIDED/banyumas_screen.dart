@@ -85,6 +85,20 @@ class BanyumasTourismScreen extends StatelessWidget {
                           color: Colors.black54, // Lighter color for description
                         ),
                       ),
+                      const SizedBox(height: 10), // Space before the button
+                      // 'Kunjungi' button
+                      ElevatedButton(
+                        onPressed: () {
+                          // You can add functionality here, like navigating to a detailed page or opening a link
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text('Mengunjungi ${item['title']}')),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.deepPurple, // Button color
+                        ),
+                        child: const Text('Kunjungi'),
+                      ),
                     ],
                   ),
                 ),
