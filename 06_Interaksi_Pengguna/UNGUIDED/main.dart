@@ -1,30 +1,22 @@
-
 import 'package:flutter/material.dart';
-import 'package:project_pencaksilat/pages/home_page.dart';
-import 'package:project_pencaksilat/pages/login_page.dart';
-import 'package:project_pencaksilat/pages/user_profile_page.dart';
+import 'splash_screen.dart'; // Import splash screen
 
 void main() {
-  runApp(PencakSilatApp());
+  runApp(const MyApp());
 }
 
-class PencakSilatApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pencak Silat Store',
-      theme: ThemeData(primarySwatch: Colors.green),
-      initialRoute: '/login', // Set LoginPage as the initial route
-      routes: {
-        '/login': (context) => LoginPage(),
-        '/home': (context) => HomePage(),
-        '/profile': (context) => UserProfilePage(),
-      },
+      debugShowCheckedModeBanner: false,
+      title: 'Wisata Indonesia',
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+      ),
+      home: SplashScreen(), // Set SplashScreen as the home
     );
   }
 }
-
-
-// Menyambung dengan UNGUIDED 7  
-
-
