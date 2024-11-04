@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'splash_screen.dart'; // Import the splash screen
+import 'package:google_fonts/google_fonts.dart';
+import 'package:pertemuan6/my_navbar.dart';
+import 'package:pertemuan6/my_package.dart';
+import 'package:pertemuan6/my_tabbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +14,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Putraokta2211104068',
       debugShowCheckedModeBanner: false,
-      title: 'Wisata Indonesia',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+        useMaterial3: true,
+        textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home: SplashScreen(), // Set SplashScreen as the home
+      home:
+          myPackage(),
+          myTabbar(),
+          myNavbar(),
     );
   }
 }
-
