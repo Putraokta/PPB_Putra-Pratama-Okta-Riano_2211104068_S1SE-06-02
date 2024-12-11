@@ -1,0 +1,26 @@
+import 'package:get/get.dart';
+
+class Note {
+  final String title;
+  final String description;
+
+  Note({
+    required this.title,
+    required this.description,
+  });
+}
+
+class NoteController extends GetxController {
+  // Observable list of notes
+  var notes = <Note>[].obs;
+
+  // Method to add a new note
+  void addNote(String title, String description) {
+    notes.add(Note(title: title, description: description));
+  }
+
+  // Method to delete a note
+  void deleteNote(int index) {
+    notes.removeAt(index);
+  }
+}
